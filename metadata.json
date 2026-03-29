@@ -1,0 +1,5 @@
+{
+  "name": "SpamClear AI",
+  "description": "Gmail Spam Cleaner & Blocker Chrome Extension powered by Gemini AI.",
+  "requestFramePermissions": []
+}

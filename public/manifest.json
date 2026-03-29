@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "SpamClear AI",
+  "version": "1.0.0",
+  "description": "Gmail Spam Cleaner & Blocker powered by Gemini AI.",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "permissions": [
+    "identity",
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://mail.google.com/",
+    "https://www.googleapis.com/"
+  ],
+  "oauth2": {
+    "client_id": "YOUR_GOOGLE_OAUTH_CLIENT_ID",
+    "scopes": [
+      "https://www.googleapis.com/auth/gmail.modify",
+      "https://www.googleapis.com/auth/gmail.settings.basic"
+    ]
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
